@@ -17,19 +17,20 @@ package com.javarush.task.task04.task0434;
 8 16 24 32 40 48 56 64 72 80
 9 18 27 36 45 54 63 72 81 90
 10 20 30 40 50 60 70 80 90 100
-
-        InputStream inputStream = System.in;
-        Reader iSR = new InputStreamReader(inputStream);
-        BufferedReader bufferedReader = new BufferedReader(iSR);
 */
 
 import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        
-
-        //напишите тут ваш код
+        int i = 10;
+        while (i-- > 0) {
+            int j = 10;
+            while (j-- > 0) {
+                System.out.print((10 - i) * (10 - j) + " ");
+            }
+            System.out.println();
+        }
 
     }
 }
